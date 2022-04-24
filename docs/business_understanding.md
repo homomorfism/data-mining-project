@@ -22,7 +22,7 @@ The project and integration with the service will be judged by increase in spent
 
 ### **Inventory of resources**
 
-The personnel available for the project is constrained by 5 people team: 1 business analyst, 1 project manager, 1 data scientist, 1 machine learning engineer, 1 business unit manager. The data available for the project is any fixed extracts of open-source data which relate to the purpose of the project and any data received through scrapping of related websites with open-source APIs. Computing resources is restricted to use of **???**.  In terms of software usage, Github was chosen as base version control system, as the main team-management software Notion was chosen, PowerPoint and Tableau were chosen as means for preparation of report and presentation of the project.
+The personnel available for the project is constrained by 5 people team: 1 business analyst, 1 project manager, 1 data scientist, 1 machine learning engineer, 1 business unit manager. The data available for the project is any fixed extracts of open-source data which relate to the purpose of the project and any data received through scrapping of related websites with open-source APIs. Computing resources is restricted to use of Tesla V100 16GB.  In terms of software usage, Github was chosen as base version control system, as the main team-management software Notion was chosen, PowerPoint and Tableau were chosen as means for preparation of report and presentation of the project.
 
 ### **Requirements, assumptions and constraints**
 
