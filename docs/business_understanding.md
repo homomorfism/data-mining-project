@@ -45,7 +45,7 @@ The glossary of terminology relevant to the project is consist from to main part
 **Data mining terminology:**
 
 - API - application program interface, which provides a means by which programs written outside of the system can interface with the system to perform additional functions.
-- Accuracy - accuracy refers to the rate of correct values in the data
+- Accuracy - accuracy refers to the percentage of films that user rated by 4-5 stars from recommendation list. 
 - Ground truth - information that is known to be true, provided by direct observation and measure
 - Test data - dataset independent of the training dataset, used to compare the estimates of the model with ground truth results
 
