@@ -24,6 +24,7 @@ def generate_detailed_film_info(_):
 is_user_rated_initial_films = False
 is_user_rated_recommended_films = False
 
+st.set_page_config(page_title="Recommendation system", page_icon="🐞", layout="centered")
 st.sidebar.write("This contains information about how to use application")
 
 st.title("Application for evaluation of recommendational system")
@@ -89,4 +90,3 @@ if 'user_ratings' in st.session_state:
             st.write('Everything is ready, creating dump...')
             st.session_state.recommendation_ratings = recommendation_ratings
             st.write("Some logs...")
-
