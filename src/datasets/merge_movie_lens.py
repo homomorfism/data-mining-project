@@ -7,12 +7,12 @@ from utils import decode_string
 
 if __name__ == "__main__":
     parser = ArgumentParser()
-    parser.add_argument("--root", "-r", type=str, default="./data/movie-lens-1m/ml-1m", help="Data root directory")
+    parser.add_argument("--root", "-r", type=str, default="./data/movie_lens/ml-1m/", help="Data root directory")
     parser.add_argument(
         "--out",
         "-o",
         type=str,
-        default="./data/movie-lens-1m/ml-1m/movie_lens_1m.csv",
+        default="./data/movie_lens/movie_lens_1m.csv",
         help="Path to the .csv file with merged data"
     )
     args = parser.parse_args()

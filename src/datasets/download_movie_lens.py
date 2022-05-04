@@ -17,7 +17,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--save-dir",
         "-s",
-        default="./data/movie-lens-1m",
+        default="./data/movie_lens",
         type=str,
         help="Destination folder"
     )
