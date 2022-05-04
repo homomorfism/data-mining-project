@@ -36,4 +36,7 @@ def decompress_gz_file(filepath):
     with gzip.open(filepath, 'rb') as f_in:
         with open(unzipped_filepath, 'wb') as f_out:
             shutil.copyfileobj(f_in, f_out)
+            
 
+if __name__ == '__main__':
+    load_imdb_datasets()
