@@ -1,5 +1,8 @@
 import sys
 import requests
+from typing import Optional
+
+import chardet
 
 # бессовестно стащил отсюда: https://sumit-ghosh.com/articles/python-download-progress-bar/
 def download(url, filename):
@@ -20,3 +23,21 @@ def download(url, filename):
                 sys.stdout.flush()
     sys.stdout.write('\n')
 
+
+def decode_string(s: bytes, encoding: Optional[str] = "ISO-8859-1") -> str:
+    """
+    Decode the string
+    :param s: Bytes string to be decoded
+    :param encoding: Initial encoding to try
+    :return: Decoded string
+    """
+
+    line_is_decoded = False
+    while not line_is_decoded:
+        try:
+            s = s.decode(encoding)
+            line_is_decoded = True
+        except UnicodeDecodeError:
+            encoding = chardet.detect(s)["encoding"]
+
+    return s
