@@ -34,3 +34,6 @@ if __name__ == "__main__":
     with ZipFile(os.path.join(args.save_dir, args.name), "r") as zip_f:
         zip_f.extractall(path=args.save_dir)
     logging.info("Data is unzipped.")
+
+    os.remove(os.path.join(args.save_dir, args.name))
+    logging.info(".zip file is deleted.")
