@@ -2,7 +2,7 @@ import gzip
 import shutil
 from pathlib import Path
 
-from src.datasets.utils import download
+from utils import download
 
 imdb_links = [
     'https://datasets.imdbws.com/name.basics.tsv.gz',
