@@ -2,3 +2,5 @@ chardet~=4.0.0
 pandas~=1.4.1
 wget~=3.2
 tqdm
+pgeocode
+plotly.express
