@@ -2,26 +2,17 @@ import pandas as pd
 import os
 import logging
 from argparse import ArgumentParser
+from typing import Optional
 from utils import decode_string
 
 
-if __name__ == "__main__":
-    parser = ArgumentParser()
-    parser.add_argument("--root", "-r", type=str, default="./data/movie_lens/ml-1m/", help="Data root directory")
-    parser.add_argument(
-        "--out",
-        "-o",
-        type=str,
-        default="./data/movie_lens/movie_lens_1m.csv",
-        help="Path to the .csv file with merged data"
-    )
-    args = parser.parse_args()
-
-    logging.basicConfig(level=logging.INFO)
-
-    movies_file_path = os.path.join(args.root, "movies.dat")
-    ratings_file_path = os.path.join(args.root, "ratings.dat")
-    users_file_path = os.path.join(args.root, "users.dat")
+def merge_movie_lens(
+    root: Optional[str] = "data/movie_lens/ml-1m",
+    out: Optional[str] = "data/movie_lens/movie_lens_1m.csv"
+) -> None:
+    movies_file_path = os.path.join(root, "movies.dat")
+    ratings_file_path = os.path.join(root, "ratings.dat")
+    users_file_path = os.path.join(root, "users.dat")
 
     # Converting movies file to .csv format
     logging.info("Converting movies file to .csv format...")
@@ -106,5 +97,22 @@ if __name__ == "__main__":
     ratings_with_movies_df = ratings_df.merge(movies_df, on="MovieID", how="left")
     merged_df = ratings_with_movies_df.merge(users_df, on="UserID", how="left")
 
-    merged_df.to_csv(args.out, index=False)
+    merged_df.to_csv(out, index=False)
     logging.info("Data is ready.")
+
+
+if __name__ == "__main__":
+    parser = ArgumentParser()
+    parser.add_argument("--root", "-r", type=str, default="data/movie_lens/ml-1m/", help="Data root directory")
+    parser.add_argument(
+        "--out",
+        "-o",
+        type=str,
+        default="data/movie_lens/movie_lens_1m.csv",
+        help="Path to the .csv file with merged data"
+    )
+    args = parser.parse_args()
+
+    logging.basicConfig(level=logging.INFO)
+
+    merge_movie_lens(args.root, args.out)
