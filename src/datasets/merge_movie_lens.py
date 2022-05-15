@@ -10,6 +10,8 @@ def merge_movie_lens(
     root: Optional[str] = "data/movie_lens/ml-1m",
     out: Optional[str] = "data/movie_lens/movie_lens_1m.csv"
 ) -> None:
+    logging.basicConfig(level=logging.INFO)
+
     movies_file_path = os.path.join(root, "movies.dat")
     ratings_file_path = os.path.join(root, "ratings.dat")
     users_file_path = os.path.join(root, "users.dat")
@@ -112,7 +114,5 @@ if __name__ == "__main__":
         help="Path to the .csv file with merged data"
     )
     args = parser.parse_args()
-
-    logging.basicConfig(level=logging.INFO)
 
     merge_movie_lens(args.root, args.out)
