@@ -1,6 +1,8 @@
 chardet~=4.0.0
 pandas~=1.4.1
 wget~=3.2
+pgeocode
+plotly.express
 tqdm~=4.62.3
 requests~=2.27.1
 numpy~=1.22.2
