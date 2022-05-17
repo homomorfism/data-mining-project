@@ -5,12 +5,12 @@ from pathlib import Path
 from utils import download
 
 imdb_links = [
-    'https://datasets.imdbws.com/name.basics.tsv.gz',
-    'https://datasets.imdbws.com/title.akas.tsv.gz', 
+    # 'https://datasets.imdbws.com/name.basics.tsv.gz',
+    # 'https://datasets.imdbws.com/title.akas.tsv.gz', 
     'https://datasets.imdbws.com/title.basics.tsv.gz', 
     'https://datasets.imdbws.com/title.crew.tsv.gz', 
-    'https://datasets.imdbws.com/title.episode.tsv.gz', 
-    'https://datasets.imdbws.com/title.principals.tsv.gz', 
+    # 'https://datasets.imdbws.com/title.episode.tsv.gz', 
+    # 'https://datasets.imdbws.com/title.principals.tsv.gz', 
     'https://datasets.imdbws.com/title.ratings.tsv.gz', 
 ]
 
