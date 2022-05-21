@@ -3,6 +3,7 @@
 - [Report](https://github.com/homomorfism/data-mining-project/blob/main/Report.pdf)
 - [Video Report](https://youtu.be/JGu9R1OfJJ4)
 - [Presentation Slides](https://docs.google.com/presentation/d/1-Jgbv7lyp4KOXJcu_9RxMHoH6h5NrO-Uhh0CArOElRs/edit?usp=sharing) (though I'm absolutely sure you won't need it)
+- [Tableau](https://public.tableau.com/app/profile/lada.morozova8590/viz/DataMiningProject_16512340731190/Story1)
 
 
 ## Developers info
