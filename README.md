@@ -1,7 +1,7 @@
 # Data Mining Group Project: Recommender System
 ## Links
-- ![Video Report](https://youtu.be/JGu9R1OfJJ4)
-- ![Presentation Slides](https://docs.google.com/presentation/d/1-Jgbv7lyp4KOXJcu_9RxMHoH6h5NrO-Uhh0CArOElRs/edit?usp=sharing)(though I'm absolutely sure you won't need it)
+- [Video Report](https://youtu.be/JGu9R1OfJJ4)
+- [Presentation Slides](https://docs.google.com/presentation/d/1-Jgbv7lyp4KOXJcu_9RxMHoH6h5NrO-Uhh0CArOElRs/edit?usp=sharing)(though I'm absolutely sure you won't need it)
 
 
 ## Developers info
